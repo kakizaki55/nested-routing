@@ -19,7 +19,7 @@ export function CategoryList({ movieCategories }) {
       })}
 
       <Route path={`${path}/:catagoryId`}>
-        <MovieList />
+        <MovieList movieCategories={movieCategories} />
       </Route>
     </>
   );
