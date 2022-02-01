@@ -100,7 +100,7 @@ export default function App() {
           <Home />
         </Route>
         <Route path="/categories">
-          <CategoryList />
+          <CategoryList movieCategories={movieCategories} />
         </Route>
       </div>
     </Router>
