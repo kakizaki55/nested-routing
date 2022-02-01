@@ -7,9 +7,7 @@ export default function MovieList({ movieCategories }) {
   const { url, path } = useRouteMatch();
 
   const category = movieCategories.filter(({ id }) => id === catagoryId);
-  console.log('category', category);
   const movieList = category[0].movies;
-  console.log('movieList', movieList);
   return (
     <div>
       {movieList.map(({ id, title }) => {
